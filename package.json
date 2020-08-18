@@ -17,6 +17,11 @@
     "name": "sk",
     "email": "kitthread@pm.me"
   },
+  "build":{
+    "appId": "com.namek",
+    "icon": "src/img/namekicon.png"
+  },
+
   "license": "MIT",
   "config": {
     "forge": {
