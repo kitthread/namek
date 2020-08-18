@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+       <title>namek</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/knopf.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <h1><center><a class="brand-logo center">NAMEK</a></center></h1>   
+      </div>
+    </nav>
+    <ul></ul>
+
+    <div class="container">
+      <form>
+        <div>
+          <label>Choose your option:</label>
+        </div>
+        <button class="knopf" type="submit">OPTION 1</button></br></br>
+        <button class="knopf" type="submit">OPTION 2</button></br></br>
+        <button class="knopf" type="submit">OPTION 3</button></br></br>
+        <button class="knopf" type="submit">OPTION 4</button></br></br>
+        <button class="knopf" type="submit">OPTION 5</button></br></br>
+        <button class="knopf" type="submit">OPTION 6</button></br></br>
+      </form>
+    </div>
+
+    <script>
+     const electron = require('electron');
+     const {ipcRenderer} = electron;
+
+     document.querySelector('form').addEventListener('submit', submitForm);
+    
+     function submitForm(e){
+      e.preventDefault();
+      const item = document.querySelector('#item').value;
+      console.log(ipcRenderer);
+      ipcRenderer.send('item:add', item);
+    }
+    
+    </script>
+  </body>
+</html>
