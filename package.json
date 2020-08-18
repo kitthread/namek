@@ -14,12 +14,12 @@
   },
   "keywords": [],
   "author": {
-    "name": "sk",
+    "name": "ski",
     "email": "kitthread@pm.me"
   },
   "build":{
     "appId": "com.namek",
-    "icon": "src/img/namekicon.png"
+    "icon": "src/img/namekicon.ico"
   },
 
   "license": "MIT",
