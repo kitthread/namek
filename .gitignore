@@ -89,3 +89,4 @@ typings/
 out/
 
 dist/
+node_modules/
