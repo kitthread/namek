@@ -1,7 +1,7 @@
 {
   "name": "namek",
   "productName": "namek",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "namek",
   "main": "src/index.js",
   "scripts": {
@@ -19,7 +19,14 @@
   },
   "build":{
     "appId": "com.namek",
-    "icon": "src/img/namekicon.ico"
+    "icon": "src/img/namekicon.ico",
+    "win":{
+      "target": [ "nsis" ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "license": "src/LICENSE.txt"
+    }
   },
 
   "license": "MIT",
