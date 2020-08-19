@@ -23,9 +23,12 @@
     "win":{
       "target": [ "nsis" ]
     },
+    
     "nsis": {
       "oneClick": false,
-      "license": "src/LICENSE.txt"
+      "license": "src/LICENSE.txt",
+      "allowToChangeInstallationDirectory": true,
+      "runAfterFinish": false
     }
   },
 
