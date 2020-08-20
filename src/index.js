@@ -11,18 +11,6 @@ const {app, BrowserWindow, Menu, ipcMain} = electron;
 let mainWindow;
 let addWindow;
 
-function createWindow () {
-  // Create the browser window.
-  const mainWindow = new BrowserWindow({
-    width: 1000,
-    height: 600,
-    icon:__dirname+'/img/namekicon.png' 
-  })
-
-  // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
-}
-
 // Listen for app to be ready
 app.on('ready', function(){
   // Create new window
