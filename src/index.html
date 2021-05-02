@@ -19,7 +19,7 @@
         <div>
           <label>Choose your option:</label>
         </div>
-        <button class="knopf" type="submit">OPTION 1</button></br></br>
+        <button onClick="msdir" class="knopf" type="submit">medistardir</button></br></br>
         <button class="knopf" type="submit">OPTION 2</button></br></br>
         <button class="knopf" type="submit">OPTION 3</button></br></br>
         <button class="knopf" type="submit">OPTION 4</button></br></br>
@@ -41,6 +41,28 @@
       ipcRenderer.send('item:add', item);
     }
     
+    const Shell = require('node-powershell');
+
+    const ps = new Shell({
+    executionPolicy: 'Bypass',
+    noProfile: true
+    });
+
+    function msdir(){
+    
+      ps.addCommand('echo node-powershell');
+      ps.invoke()
+      .then(output => {
+      console.log(output);
+      })
+      .catch(err => {
+      console.log(err);
+      });
+
+     }
+
+
+
     </script>
   </body>
 </html>

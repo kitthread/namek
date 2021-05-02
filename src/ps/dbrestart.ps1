@@ -1,0 +1,3 @@
+stop-service oracleservicemedistar
+restart-service OracleOraDb11g_home1TNSListener
+start-service oracleservicemedistar
