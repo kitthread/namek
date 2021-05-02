@@ -41,26 +41,12 @@
       ipcRenderer.send('item:add', item);
     }
     
-    const Shell = require('node-powershell');
-
-    const ps = new Shell({
-    executionPolicy: 'Bypass',
-    noProfile: true
-    });
 
     function msdir(){
+      var spawn = require("child_process").spawn,child;
+      child = spawn("powershell.exe",[".\\ps\\medistardir.ps1"]);
     
-      ps.addCommand('echo node-powershell');
-      ps.invoke()
-      .then(output => {
-      console.log(output);
-      })
-      .catch(err => {
-      console.log(err);
-      });
-
-     }
-
+    }
 
 
     </script>
