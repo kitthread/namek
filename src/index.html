@@ -19,7 +19,7 @@
         <div>
           <label>Choose your option:</label>
         </div>
-        <button onClick="msdir" class="knopf" type="submit">medistardir</button></br></br>
+        <button onclick="window.open('./msdir.html')" class="knopf" type="submit">medistardir</button></br></br>
         <button class="knopf" type="submit">OPTION 2</button></br></br>
         <button class="knopf" type="submit">OPTION 3</button></br></br>
         <button class="knopf" type="submit">OPTION 4</button></br></br>
@@ -41,13 +41,6 @@
       ipcRenderer.send('item:add', item);
     }
     
-
-    function msdir(){
-      var spawn = require("child_process").spawn,child;
-      child = spawn("powershell.exe",[".\\ps\\medistardir.ps1"]);
-    
-    }
-
 
     </script>
   </body>
