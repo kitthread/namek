@@ -6,6 +6,15 @@ const url = require('url');
 // SET ENV
 process.env.NODE_ENV = 'development';
 
+var $ports_to_check = '8995, 8465, 9999, 4443, 995, 465';
+
+var $services_to_check = 'CGM_KIM_ClientModule, kv.dox KIM Clientmodul Service';
+
+var $ms_path = 'D:\medistar';
+var $sys_path = 'C:\Windows\SysWOW64\sysconf.s';
+
+
+
 const {app, BrowserWindow, Menu, ipcMain} = electron;
 
 let mainWindow;
