@@ -323,15 +323,10 @@
   "resolved" "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.3.tgz"
   "version" "3.0.3"
 
-"@types/node@*":
-  "integrity" "sha512-mikldZQitV94akrc4sCcSjtJfsTKt4p+e/s0AGscVA6XArQ9kFclP+ZiYUMnq987rc6QlYxXv/EivqlfSLxpKA=="
-  "resolved" "https://registry.npmjs.org/@types/node/-/node-14.6.0.tgz"
-  "version" "14.6.0"
-
-"@types/node@^12.0.12":
-  "integrity" "sha512-ge4xZ3vSBornVYlDnk7yZ0gK6ChHf/CHB7Gl1I0Jhah8DDnEQqBzgohYG4FX4p81TNirSETOiSyn+y1r9/IR6w=="
-  "resolved" "https://registry.npmjs.org/@types/node/-/node-12.12.54.tgz"
-  "version" "12.12.54"
+"@types/node@*", "@types/node@^14.6.2":
+  "integrity" "sha512-8kQ3+wKGRNN0ghtEn7EGps/B8CzuBz1nXZEIGGLP2GnwbqYn4dbTs7k+VKLTq1HvZLRCIDtN3Snx1Ege8B7L5A=="
+  "resolved" "https://registry.npmjs.org/@types/node/-/node-14.17.4.tgz"
+  "version" "14.17.4"
 
 "@types/yargs-parser@*":
   "integrity" "sha512-FA/BWv8t8ZWJ+gEOnLLd8ygxH/2UFbAvgEonyfN6yWGLKc7zVjbpl2Y4CTjid9h2RfgPP6SEt6uHwEOply00yw=="
@@ -1245,13 +1240,13 @@
     "lodash.template" "^4.2.2"
     "temp" "^0.9.0"
 
-"electron@^9.4.4":
-  "integrity" "sha512-dcPlTrMWQu5xuSm6sYV42KK/BRIqh3erM8v/WtZqaDmG7pkCeJpvw26Dgbqhdt78XmqqGiN96giEe6A3S9vpAQ=="
-  "resolved" "https://registry.npmjs.org/electron/-/electron-9.4.4.tgz"
-  "version" "9.4.4"
+"electron@^13.1.4":
+  "integrity" "sha512-4qhRZbRvGqHmMWsCG/kRVF4X8VIq9Nujgm+gXZLBSpiR6uUtMHy7ViBTQZl1PGf6O9Ppxhpr9Yz+k6Um9WoP3Q=="
+  "resolved" "https://registry.npmjs.org/electron/-/electron-13.1.4.tgz"
+  "version" "13.1.4"
   dependencies:
     "@electron/get" "^1.0.1"
-    "@types/node" "^12.0.12"
+    "@types/node" "^14.6.2"
     "extract-zip" "^1.0.3"
 
 "emoji-regex@^7.0.1":
