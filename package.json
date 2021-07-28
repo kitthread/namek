@@ -65,7 +65,8 @@
     "is-port-reachable": "^3.0.0",
     "node-abi": "^2.30.0",
     "node-powershell": "^4.0.0",
-    "windows-service-controller": "^0.1.5"
+    "windows-service-controller": "^0.1.5",
+    "type": "commonjs"
   },
   "devDependencies": {
     "@electron-forge/cli": "6.0.0-beta.52",

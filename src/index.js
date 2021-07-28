@@ -2,6 +2,7 @@
 const electron = require('electron');
 const path = require('path');
 const url = require('url');
+const { spawn } = require('child_process');
 
 
 // SET ENV
@@ -55,6 +56,12 @@ app.on('activate', function () {
   if (BrowserWindow.getAllWindows().length === 0) createWindow()
 })
 
+
+function port(){
+  var spawn = require("child_process").spawn;
+  spawn("powershell.exe",[".\ps\KIM-Check.ps1"]);
+
+}
 
 // Catch item:add
 ipcMain.on('item:add', function(e, item){

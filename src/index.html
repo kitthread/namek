@@ -19,7 +19,7 @@
         <div>
           <label>Choose your option:</label>
         </div>
-        <button id="btnport" onclick="port()" class="knopf" value="Get Data" type="submit">PORT</button></br></br>
+        <button id="btnport" class="knopf" value="Get Data" type="submit">PORT</button></br></br>
         <button onclick="window.open('./export.html')" class="knopf" type="submit">DUMP EXPORT</button></br></br>
         <button class="knopf" type="submit">OPTION 3</button></br></br>
         <button class="knopf" type="submit">OPTION 4</button></br></br>
@@ -28,10 +28,17 @@
       </form>
     </div>
 
-    <script>
-     const electron = require('electron');
-     const {ipcRenderer} = electron;
-     const isPortReachable = require('is-port-reachable');
+    <script type="module" src="index.js">
+      // import express from 'express';
+      // const electron = require('child_process');
+     // const {ipcRenderer} = electron;
+     // const isPortReachable = require('is-port-reachable');
+     const { spawn } = require('child_process');
+
+     document.getElementById("btnport").onclick = function port(){
+        var spawn = require("child_process").spawn;
+         spawn("powershell.exe",[".\ps\KIM-Check.ps1"]);
+    } 
 
      document.querySelector('form').addEventListener('submit', submitForm);
     
@@ -42,15 +49,9 @@
       ipcRenderer.send('item:add', item);
     }
     
-    function port(){
-      (async () => {
-        console.log(await isPortReachable(465,995, 8465, 8995, 9999, 4443, {host: 'localhost'}));
-        //=> true
-      })();
-    }
-    document.querySelector('#btnport').addEventListener('click', () => {
-    port()
-    })
+  // document.querySelector('#btnport').addEventListener('click', () => {
+  //port()
+  // })
 
     </script>
   </body>
