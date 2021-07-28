@@ -3,6 +3,7 @@ const electron = require('electron');
 const path = require('path');
 const url = require('url');
 
+
 // SET ENV
 process.env.NODE_ENV = 'development';
 
@@ -92,6 +93,8 @@ const mainMenuTemplate =  [
     ]
   }
 ];
+
+
 
 // If OSX, add empty object to menu
 if(process.platform == 'darwin'){
